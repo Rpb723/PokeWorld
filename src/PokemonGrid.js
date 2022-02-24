@@ -13,14 +13,7 @@ let posArray = [];
 let num = undefined;
 let word = "";
 let posArray2 = [];
-// const [pos2, setPos2]  = useState([]);
 
-// for(let i = 1; i < pokemonData.length; i++){
-//   posArray2.push(i);
-//   setPos2(posArray2);
-// }
-
-// console.log(pos2)
 
 function pokeyArr(){
   results?.map((object, k) =>{
@@ -55,27 +48,6 @@ function HandleSearch(q){
     console.log(posArray);
   }  
 
-  // console.log(results);
-
-  // console.log(url);
-//  const pokeData = results.map((pokemon, i) =>
-//   <span>
-//     <ul>
-//       <li>{pokemon.name}</li>
-//       <li>{pokemon.url}</li>
-//     </ul>
-
-//   </span>
-
-//    );
-
-
-// console.log(pokeData());
-  // pokeData();
-
-// {pokemonData.results.map(pokemon =>(
-//           <Pokemon key ={pokemon.name} pokemonData={pokemon}></Pokemon>
-//       ))}
 
 
 const pokemonCustom = pos.map((num) => 
@@ -85,16 +57,7 @@ const pokemonStandard = pokeyArr().map((object) =>
   <Pokemon key={object} pokemonData={results} position={object}></Pokemon>
 )
   
-// console.log(typeof results)
 
-// function pokeStandard(){
-//   for(let i = 0; i <=pokemonData.length; i++){
-//     <Pokemon key={i} pokemonData={results} position={i}></Pokemon>
-//     console.log(i)
-//   }
-// }
-
-// const pokemonStandard = <Pokemon  pokemonData={results} ></Pokemon>;
 
 function printPokemonCard(){
   if(pos.length === 0 || pos === undefined){
@@ -116,10 +79,6 @@ function printPokemonCard(){
       <Search HandleSearch ={HandleSearch}/>
       <div className='pokecards'>{printPokemonCard()}</div>
       
-      {/* <Pokemon key ={results} pokemonData={results}></Pokemon> */}
-      {/* {pokemonData.results.map(pokemon =>(
-          console.log(fetchPokemonData(pokemon))
-      ))}  */}
   </div>
 
 
