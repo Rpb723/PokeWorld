@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+.app{
+  min-height: 100vh;
+  background-image: url('mewtwoNeon.gif');
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 55%; /* Resize the background image to cover the entire container */
+}
+.app_page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px){
+  .app{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('mewtwoNeon.gif');
+    background-color: black;
+    background-attachment: fixed !important;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+  }
+  .app_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+}

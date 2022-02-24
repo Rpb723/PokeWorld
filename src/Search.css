@@ -1,0 +1,63 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.search > input {
+    width: 23rem;
+    height: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 9px;
+    margin: 20px 20px 0px;
+    padding: 10px;
+    color: #2a75bb;
+    border: 1px solid #ffcc03;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.search > input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3c5aa6;
+    opacity: .8; /* Firefox */
+  }
+  
+  .search > input::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #3c5aa6;
+  }
+  
+  .search > input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #3c5aa6;
+  }
+
+  @media (max-width: 800px) {
+    .search > input {
+        width: 20rem;
+        height: 2rem;
+        background-color: #f5f5f5;
+        border-radius: 9px;
+        margin: 20px 20px 0px;
+        padding: 10px;
+        color: #2a75bb;
+        border: 1px solid #ffcc03;
+        font-family: 'Pokemon Solid', sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+    
+    .search > input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #3c5aa6;
+        opacity: .8; /* Firefox */
+      }
+      
+      .search > input::-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #3c5aa6;
+      }
+      
+      .search > input::-ms-input-placeholder { /* Microsoft Edge */
+        color: #3c5aa6;
+      }
+      
+  }
